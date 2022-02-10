@@ -25,7 +25,7 @@ public class Calculator {
 
   java.util.List<String> main = java.util.List
     .of(
-        "x", "/", "⬅️",
+        "x", "/", "<-",
         "7", "8", "9",
         "4", "5", "6",
         "1", "2", "3",
@@ -100,7 +100,7 @@ public class Calculator {
           output.setText("");
           value = OptionalDouble.empty();
 
-        } else if (btnText.equals("⬅️")) {
+        } else if (btnText.equals("<-")) {
           output.setText(current.equals("") ? current
             : current.substring(0, length - 1));
           value = OptionalDouble.empty();
